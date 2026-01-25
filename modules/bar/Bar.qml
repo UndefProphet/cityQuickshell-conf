@@ -130,9 +130,9 @@ Scope {
                         workspaceTextColor: sysPalette.text
                         workspaceBackgroundColor: "transparent"
                         workspaceFocusedTextColor: sysPalette.highlightedText
-                        workspaceFocusedBackgroundColor: sysPalette.accent
+                        workspaceFocusedBackgroundColor: sysPaletteInactive.accent
                         // Different monitor colors
-                        workspaceDifferentMonitorTextColor: sysPalette.placeholderText
+                        workspaceDifferentMonitorTextColor: sysPalette.highlight
                         workspaceDifferentMonitorBackgroundColor: 'transparent'
                         workspaceDifferentMonitorFocusedTextColor: sysPalette.highlightedText
                         workspaceDifferentMonitorFocusedBackgroundColor: sysPalette.highlight
