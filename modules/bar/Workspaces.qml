@@ -108,7 +108,12 @@ Item {
           implicitWidth: workspaceItemsRow.width + root.workspacePaddingHorizontal
 
           radius: root.roundingWorkspaceGroup
-          color: backgroundColor
+          color: "transparent"
+          border {
+            color: backgroundColor
+            width: 1
+          }
+
 
           MouseArea {
             anchors.fill : workspaceItemsRow

@@ -129,12 +129,14 @@ Scope {
                         // Workspace colors
                         workspaceTextColor: sysPalette.text
                         workspaceBackgroundColor: "transparent"
-                        workspaceFocusedTextColor: sysPalette.highlightedText
+                        // workspaceFocusedTextColor: sysPalette.highlightedText
+                        workspaceFocusedTextColor: sysPalette.text
                         workspaceFocusedBackgroundColor: sysPaletteInactive.accent
                         // Different monitor colors
                         workspaceDifferentMonitorTextColor: sysPalette.highlight
                         workspaceDifferentMonitorBackgroundColor: 'transparent'
-                        workspaceDifferentMonitorFocusedTextColor: sysPalette.highlightedText
+                        // workspaceDifferentMonitorFocusedTextColor: sysPalette.highlightedText
+                        workspaceDifferentMonitorFocusedTextColor: sysPalette.highlight
                         workspaceDifferentMonitorFocusedBackgroundColor: sysPalette.highlight
                     }
                 }
