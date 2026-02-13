@@ -84,7 +84,7 @@ Item {
             source: trayIconImage 
             implicitHeight: root.iconSize
             implicitWidth: root.iconSize
-            brightness: 0.1
+            // brightness: 0.1
             colorization: 1
             colorizationColor: root.tintColor
           }

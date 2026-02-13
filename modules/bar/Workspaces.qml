@@ -192,10 +192,20 @@ Item {
                   source: applicationIconImage 
                   implicitHeight: root.iconSize
                   implicitWidth: root.iconSize
-                  brightness: 0.10
-                  colorization: 0.75
+                  saturation: -0.5
+                  // brightness: 0.10
+                  colorization: 1
                   colorizationColor: root.tintColor
                 }
+                // MultiEffect {
+                //   id: alteredIconImage
+                //   source: applicationIconImage 
+                //   implicitHeight: root.iconSize
+                //   implicitWidth: root.iconSize
+                //   brightness: 0.10
+                //   colorization: 0.75
+                //   colorizationColor: root.tintColor
+                // }
               }
             }
           }
