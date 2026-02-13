@@ -68,6 +68,11 @@ Scope {
                     spacing: root.widgetSpacings
                   
                     // PaletteSampler {}
+                    Time {
+                      textColor: sysPalette.windowText
+                      widgetBackground: sysPalette.light
+                      // widgetBackgroundSideMargin: root.widgetBackgroundSpacing
+                    }
                 }
             }
 
@@ -95,11 +100,6 @@ Scope {
                     Battery {
                       textColor: sysPalette.windowText
                       reverseOrder: true
-                    }
-                    Time {
-                      textColor: sysPalette.windowText
-                      widgetBackground: sysPalette.light
-                      // widgetBackgroundSideMargin: root.widgetBackgroundSpacing
                     }
                 }
             }
