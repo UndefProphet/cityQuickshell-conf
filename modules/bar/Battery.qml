@@ -10,6 +10,7 @@ Item {
   property int fontSize: 16
   property bool reverseOrder: false
   property color textColor: "white"
+  property bool textBold: false
   property int iconSize: 15
 
   implicitWidth: batteryRectangle.width
@@ -41,7 +42,7 @@ Item {
           readonly property bool charging: device.changeRate > 0
 
           // font.pixelSize: root.fontSize
-          font.bold: true
+          font.bold: root.textBold
 
           function getPrecentage(upowerPrecentage) {
             return `${Math.round((upowerPrecentage + Number.EPSILON) * 100)}%`

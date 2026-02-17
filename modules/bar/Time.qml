@@ -6,6 +6,7 @@ Item {
   id: root
   property string time
   property color textColor: "white"
+  property bool textBold: false
   property color widgetBackground: "transparent"
   // property int widgetBackgroundSideMargin: 4
 
@@ -33,7 +34,7 @@ Item {
       id: timeText
       text: `${Qt.formatDateTime(clock.date, "hh:mm ddd, dd MMM")}`
       color: root.textColor
-      font.bold: true
+      font.bold: root.textBold
     }
   }
 

@@ -23,6 +23,7 @@ Item {
   // Font
   property Font font;
   property int textSize: 12
+  property bool textBold: false
 
   // Colors
   property color tintColor
@@ -164,7 +165,7 @@ Item {
               color: textColor
               textFormat: Text.RichText
               text: workspaceItem.workspace?.id + ("<sup>" + monitorId + "</sup>")
-              font.bold: true
+              font.bold: root.textBold
             }
 
             // For each window in the workspace.
