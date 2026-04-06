@@ -7,6 +7,8 @@ import Quickshell.Widgets
 
 Item {
   id: root
+
+  property int maxWidth: 48
   property int fontSize: 16
   property bool reverseOrder: false
   property color textColor: "white"
@@ -29,7 +31,7 @@ Item {
     RowLayout {
       id: batteriesRow
       anchors.centerIn: parent
-      spacing: 4
+      spacing: 5
 
       Repeater {
         model: UPower.devices.values.filter(device => {
@@ -37,6 +39,7 @@ Item {
         }).sort((a, b) => root.reverseOrder? b.type - a.type : a.type - b.type) 
 
         delegate : Text {
+          id: textItem
           required property UPowerDevice modelData
           readonly property UPowerDevice device: modelData
           readonly property bool charging: device.changeRate > 0
@@ -51,10 +54,11 @@ Item {
           color: root.textColor
           text: {
             switch (device.type) {
-              case 2: return `Battery: ${getPrecentage(device.percentage)}`
-              default: return `${device.model}: ${getPrecentage(device.percentage)}`
+              case 2: return `Battery:${getPrecentage(device.percentage)}`
+              default: return `${device.model}:${getPrecentage(device.percentage)}`
             }
           }
+
 
        }
       }

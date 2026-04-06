@@ -32,7 +32,7 @@ Item {
 
     Text {
       id: timeText
-      text: `${Qt.formatDateTime(clock.date, "hh:mm ddd, dd MMM")}`
+      text: `${Qt.formatDateTime(clock.date, "dddd, MMMM dd hh:mm")}`
       color: root.textColor
       font.bold: root.textBold
     }

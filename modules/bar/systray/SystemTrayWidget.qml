@@ -2,9 +2,11 @@
 
 pragma ComponentBehavior: Bound
 
-import QtQuick.Effects
 import QtQuick
+import QtQuick.Effects
 import QtQuick.Layouts
+import QtQuick.Controls
+import Quickshell // for PanelWindow
 import Quickshell.Services.SystemTray
 import Quickshell.Widgets
 
@@ -62,10 +64,13 @@ Item {
                     break;
 
                     case Qt.RightButton:
-                        console.log("Right click")
                         console.log("Right click on", modelData.id, "hasMenu:", modelData.hasMenu, "menu:", modelData.menu)
                         if (trayItemRect.trayItem.hasMenu){
                           console.log("Cocaine Discovered")
+                          // QsMenuEntery
+                          systemTrayWindowMenu.menuOptions = trayItemRect.trayItem.menu?.children
+                          console.log(systemTrayWindowMenu.menuOptions)
+                          contextMenu.popup()
                         }
                     break;
                 }
@@ -91,33 +96,21 @@ Item {
         }
       }
     }
-
   }
 
 
-  // PanelWindow {
+  PanelWindow {
+    visible: false
+    id: systemTrayWindowMenu
+    implicitHeight: contextMenu.height
+    implicitWidth: contextMenu.width
+    // color: "transparent"
 
-  //   property bool showMenu: true;
+    property var menuOptions: []
 
-  //   color: "transparent"
-  //   visible: showMenu;
-    
-  //   anchors {
-  //     bottom: true
-  //     left: true
-  //     right: true
-  //   }
-
-  // margins {
-
-  // }
-
-  //   Rectangle {
-  //     visible: true
-  //     anchors.fill: parent
-
-  //     color: "red";
-
-  //   }
-  // }
+    Menu {
+      id: contextMenu
+      MenuItem { text: "Paste" }
+    } 
+  }
 }

@@ -30,22 +30,22 @@ Item {
       id: colorColumn
       RowLayout {
         id: colorLayoutActive
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.accent }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.alternateBase }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.base }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.button }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.buttonText }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.dark }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.highlight }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.highlightedText }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.light }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.mid }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.midlight }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.placeholderText }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.shadow }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.text }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.window }
-        Rectangle { width: root.squareSizes; height: root.squareSizes; color: sysPalette.windowText }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.accent }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.alternateBase }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.base }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.button }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.buttonText }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.dark }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.highlight }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.highlightedText }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.light }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.mid }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.midlight }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.placeholderText }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.shadow }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.text }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.window }
+        Rectangle { implicitWidth: root.squareSizes; height: root.squareSizes; color: sysPalette.windowText }
       }
 
       RowLayout {
